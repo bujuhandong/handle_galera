@@ -3,7 +3,7 @@
 
 ### 程序结构：
 ```
-handle_mgr/
+handle_galera/
 |-- bin/
 |   |-- __init__.py
 |   |-- handle_galera.py
@@ -27,7 +27,8 @@ handle_mgr/
 	
 ### 使用方法：
     1) 编辑配置文件conf/galera.conf，以下为配置文件参数解析:
-	  ####[default]必须存在，放MySQL的一些相关信息，包括defaults-file、datadir、basedir、user、password、socket几个参数
+	  ####[default]必须存在，放MySQL的一些相关信息，包括defaults-file、datadir、basedir、
+	  ####user、password、socket几个参数
       ####用户可以根据实际情况更改。其中datadir必须运行前已存在。
       [default]
       defaults-file = /57data/galera_my/my.cnf
